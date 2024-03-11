@@ -57,9 +57,10 @@ int main() {
     int opc = 0;
     do { 
         cout << "BIENVENIDO AL SISTEMA DE REGISTRO DE PACIENTES"<< endl;
-        cout << "¿Que deseas realizar?"<< endl << endl;
+        cout << "Que deseas realizar?"<< endl << endl;
         cout << "1. Registrar paciente" << endl;
-        cout << "2. Ver registros unicos de visita" << endl << endl;
+        cout << "2. Ver registros unicos de visita" << endl;
+        cout << "3. Salir "<<endl<<endl;
         cout << "Ingrese que va ha hacer: ";
         cin >> opc;
         cin.ignore();
@@ -72,7 +73,7 @@ int main() {
                 mostrar();
                 break;
         }
-    } while (opc != 5);
+    } while (opc != 3);
 
     aux = cab;
     while (aux != NULL) {
